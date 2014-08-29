@@ -15,16 +15,16 @@ adding to your repository
  - git remote add shared <repo url> 
  
 grabbing latest changes
- - git subtree pull --prefix=models --squash models master
+ - git subtree pull --prefix=shared --squash shared master
 
 making changes
  - If you DO NOT have a branch for the subtree
-   - git subtree split --prefix=models --branch models
+   - git subtree split --prefix=shared --branch shared
 
  - If you do have the branch:
-    - git subtree split --prefix=models --onto models --branch models
+    - git subtree split --prefix=shared --onto shared --branch shared
 
- git push models models:master
+ git push shared shared:master
 
 
 Resources
